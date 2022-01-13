@@ -1,0 +1,14 @@
+@font-face {
+	font-family:'HelveticaNeueLT-Roman';
+	src:url("../fonts/HelveticaNeueLT-Roman.woff2") format("woff2"),
+	url("../fonts/HelveticaNeueLT-Roman.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family:'typesauceregular';
+	src:url('../fonts/typesauceregular.woff2') format('woff2'),
+    url('../fonts/typesauceregular.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+}

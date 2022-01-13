@@ -1,0 +1,32 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="280px" height="55px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="280px" height="55px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="0" />
+    <feGaussianBlur result="blurOut" stdDeviation="0" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.33"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+
+</defs>
+  <style>
+    tspan { padding: 0; margin: 0; text-transform: uppercase;}
+  </style>
+<g filter="url(#Filter_0)">
+<link href="../css/fonts.css" rel="typesauceregular" />
+<text kerning="auto" font-family="typesauceregular" fill="rgb(0, 0, 0)" 
+transform="matrix( 1.87328690559609, 0, 0, 1.87328690559609,1.73751467384085, 50.0703366162168)" font-size="18px">
+  <tspan font-size="20px" font-family="typesauceregular" fill="#FFFFFF" >movie</tspan>
+  <tspan font-size="26px" font-family="typesauceregular" fill="#67ACDC">S</tspan>
+  <tspan font-size="20px" font-family="typesauceregular" fill="#FFFFFF">torm</tspan>
+</text>
+</g>
+</svg>
+

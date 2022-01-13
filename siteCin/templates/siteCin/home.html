@@ -1,0 +1,59 @@
+{% extends 'siteCin/base.html' %}
+
+{% block filter %}
+	<!--<form action="{% url 'json_filter' %}" method="get" name="filter">-->
+	<form action="{% url 'filter' %}" method="get">
+		<div class="div sidebar__genre g-filter">
+			<div class="genre__icon1 icon1">
+				<span class="line"></span>
+				<span class="burger"></span>
+				<span class="text genre">Жанр</span>
+			</div>
+			<div class="genre__but">
+				<button class="gbtn" type="submit">
+					<span class="gbtn__label">Применить фильтр</span>
+				</button>
+			</div>
+			<div class="vertical-menu">
+				{% for genre in view.get_genres %}
+					<input type="checkbox" id="c{{ genre.id }}" name="genre" value="{{ genre.id }}" />
+					<label for="c{{ genre.id }}">{{ genre.name }}
+						<span></span>
+					</label>
+				{% endfor %}
+			</div>						
+		</div>
+	</form>	
+{% endblock filter %}
+
+{% block content %}
+	<div class="content__main_wrapper bg">
+		<div class="main_wrapper__movie-list mList">	
+			<div class="content__wrap_content list_items">
+				{% for card in movie_list %}
+					<div class="wrap__item">
+						<div class="movie_item item{{ card.id }}">
+							<img src="{{ card.poster.url }}" class="img_item">
+							<p class="card_description" align="center">
+								<span class="movie_card_header title">
+									{{ card.title }}
+									<i class="raiting_sub">{{ card.restriction }}</i>
+								</span>
+								<span class="movie_card_genre">
+									{% for genre in card.genres.all %}
+										{{ genre.name }}
+									{% endfor %}
+								</span>
+							</p>
+							 <form action="{{ card.get_absolute_url }}">
+								<button class="card_btn">
+									<span class="card_btn__label">Подробности</span>
+								</button>
+							</form>								
+						</div>								
+					</div>
+				{% endfor %}
+			</div>
+		</div>				
+	</div>				
+{% endblock content %}

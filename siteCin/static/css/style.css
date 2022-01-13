@@ -1,0 +1,16 @@
+@import url("fonts.css");
+@import url(core.css);
+@import url(blocks/header.css);
+@import url(blocks/btns.css);
+@import url(blocks/content__btns.css);
+@import url(blocks/slider.css);
+@import url(blocks/content.css);
+@import url(blocks/movie_detail.css);
+
+
+p{
+	font-size: 235%;
+	font-family: typesauceregular, sans-serif;
+	position: relative;
+}
+

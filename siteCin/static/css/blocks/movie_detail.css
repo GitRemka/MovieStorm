@@ -1,0 +1,274 @@
+.mDetail{
+	padding: 72px 57px;
+}
+.single_movie_card{
+	display: flex;
+	align-items: flex-start;
+	width: 100%;
+}
+.img_movie{
+	height: 372px;
+	width: 260px;
+	margin-right: 35px;
+}
+.info{
+	width: 100%;
+	display: inline-block;
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.item_title{
+	display: flex;
+	align-items: center;
+	font-size: 30px;
+	font-weight: bold;
+	font-family:HelveticaNeueLT-Roman;
+	color: #fff;
+	margin-bottom: 32px;
+}
+.sub{
+    font-size: 15px;
+    line-height: 18px;
+    border: 2px solid #47c3f0;
+    padding: 2px;
+    margin-left: 17px;
+    border-radius: 5px;
+    font-style: normal;
+}
+/*Информация о фильме*/
+.announce{
+	padding-bottom: 25px;
+}
+.announce__text{
+	font-weight: bold;
+	line-height: 26px;
+	font-size: 15px;
+	font-family:HelveticaNeueLT-Roman;
+	color: #fff;
+}
+.movie__card_table td:nth-child(1) {
+	font-weight: bold;
+	font-size: 15px;
+	font-family:HelveticaNeueLT-Roman;
+	color: #16addf;
+    padding-right: 20px;
+    vertical-align: top;
+}
+.movie__card_table td {
+    font-size: 14px;
+    padding-top: 3px;
+}
+.movie_genre {
+    line-height: 24px;
+    font-weight: bold;
+	font-size: 15px;
+	font-family:HelveticaNeueLT-Roman;
+	color: #fff;
+}
+.movgen span:not(:last-child):after { content: ','; }
+
+/*Подробности*/
+.block_detail{
+	width: 100%;
+	margin-top: 45px;
+}
+.detail__line{
+    /* Чтобы спрятать часть линий, которые 
+    ** будут вылазить за пределы блока */
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+}
+.detail__line span{
+    /* Стили тега обертки для заголовков 
+    ** в несколько строк */
+    display: inline-block;
+    font-family:HelveticaNeueLT-Roman;
+    color: #47c3f0;
+}
+.detail__line:before,
+.detail__line:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.detail__line:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -168%;
+    /* Указываем в пикселях отступ линии от текста заголовка left*/  
+}
+.detail__line:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;   
+}
+
+.table2{
+	margin: 15px 45px;
+}
+.budget span:before { content: '$'; }
+.lineD{
+	height: 2px;
+	margin-top: 25px;
+	background-color: #fff;
+}
+
+/*блок сенсы*/
+.block_sessions{
+	width: 100%;
+	margin-top: 45px;
+}
+.sessions__line{
+    /* Чтобы спрятать часть линий, которые 
+    ** будут вылазить за пределы блока */
+    overflow: hidden;
+    text-align: center;
+    font-size: 30px;
+}
+.sessions__line span{
+    /* Стили тега обертки для заголовков 
+    ** в несколько строк */
+    display: inline-block;
+    font-family:HelveticaNeueLT-Roman;
+    color: #47c3f0;
+}
+.sessions__line:before,
+.sessions__line:after {
+    /* Обязательно указываем пустое свойство content, 
+    ** иначе псевдоэлементы не появятся на сайте */
+    content: "";
+    /* Указываем что наши линии будут строчно-блочные и 
+    ** выравнивание по высоте - по центру */
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    /* Добавляем пседоэлемантам возможность изменить 
+    ** позицию линии, для создания отступов от текста */
+    position: relative;
+}
+.sessions__line:before {
+    /* Смещаем левую линию на 100% влево, чтобы линия 
+    ** встала рядом с текстом слева */
+    margin-left: -168%;
+    /* Указываем в пикселях отступ линии от текста заголовка left*/  
+}
+.sessions__line:after {
+    /* Смещаем правую линию на 100% вправо, чтобы 
+    ** линия встала рядом с текстом справа */
+    margin-right: -100%;   
+}
+
+.circle {
+  position: relative;
+  vertical-align: middle;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #47c3f0;
+}
+.circle::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 6px;
+  height: 12px;
+  background: white;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #6e5ee5;
+  border-left: none;
+}
+#session__date{
+	display: inline-block;
+    color: #6e5ee5;
+}
+
+.sessions_detail p{
+	font-family:HelveticaNeueLT-Roman;
+} 
+.format_movie{
+	font-size: 30px;
+	color: #fff;
+	margin: 50px 0px 20px 20px;
+}
+.sessions_detail__block{
+	display: inline-block;
+	vertical-align: middle;
+	width: 85px;
+	height: 80px;
+	text-align: center;
+}
+.time_ses{
+	display: inline-block;
+    font-size: 20px;
+    line-height: 18px;
+    border: 2px solid #47c3f0;
+    color: #47c3f0;
+    padding: 4px;
+    border-radius: 5px;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.textS{
+	font-size: 13px;
+	color: #c0c0c0;
+}
+
+
+.fa-comments{
+	margin: 10px 5px 0 10px;
+	font-size: 25px;
+	color: #47c3f0;
+}
+.line2{
+	background-color: #47c3f0;
+}
+.comment{
+	color: #47c3f0;
+}
+.menu2{
+	scrollbar-color: #47c3f0 #191a20; 
+    scrollbar-width: thin;
+}
+.menu2 label::before{
+  content: '';
+  display: inline-block;
+  border: 8px solid transparent;
+  border-left: 13px solid #47c3f0;
+  margin-right: 5px;
+  width: 0;
+  height: 0;
+  transform: translateY(2px);
+}
+/*Кнопка*/
+.gbtn2{
+	width: 230px;
+	height: 40px;
+	margin-top: 17px;
+	font-family:HelveticaNeueLT-Roman;
+	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 0.56px;
+	color: #fff;
+	text-align: center;
+	background-color: #292b37;
+	border: none;
+	transition-property: all;
+	transition-duration: 300ms;
+}
+.gbtn2:hover,.gbtn:active,.gbtn:focus{
+	 box-shadow:0px 0px 2px #bababa, inset 0px 0px 20px #47c3f0;; 
+}

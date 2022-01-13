@@ -1,0 +1,263 @@
+.content__wrap{
+	height: 1600px;
+	margin-top: 45px;
+	display: grid;
+	grid-template: 1410px / 345px 1fr;
+}
+
+.bg{
+	grid-column: 2;
+	grid-row: 1;
+	justify-self: center;
+	margin-top: 70px;
+	width: 100%;
+	height: 1340px;
+	background: #1e212a;
+}
+.mList{
+	padding: 37px 28px;
+}
+.list_items{
+	display: flex;
+	/*align-items: flex-start;
+    justify-content: space-between;
+    align-content: flex-start;*/
+	flex-wrap: wrap;
+	width: 100%;
+}
+.wrap__item{
+	padding: 0 44px 70px;
+
+}
+.movie_item{
+	float: left;
+	display: inline-block;
+	position: relative;
+	text-align: center; 
+	overflow: hidden;
+	width: 203px;
+	height: 325px;
+	border-radius: 5px;
+	background-color: #fff;
+}
+.img_item{
+	height: 182px;
+	width: 100%;
+}
+.card_description{
+	margin: 0 auto;
+}
+.title{
+	display: block;
+	font-family:HelveticaNeueLT-Roman;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #242b2d;
+	font-weight: bold;
+	margin: 15px 0px 5px 0px;
+}
+.raiting_sub{
+    font-size: 13px;
+    color: #47c3f0;
+    line-height: 18px;
+    border: 2px solid #47c3f0;
+    padding: 0 2px 0 3px;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-style: normal;
+}
+.movie_card_genre{
+    display: block;
+    font-family:HelveticaNeueLT-Roman;
+    font-size: 13px;
+    color: #47c3f0;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+.card_btn{
+	width: 146px;
+	height: 30px;
+	position: absolute;
+	right: 28px;
+	bottom: 10px;
+	font-family:HelveticaNeueLT-Roman;
+	font-weight: bold;
+	font-size: 15px;
+	letter-spacing: 0.56px;
+	color: #fff;
+	text-align: center;
+	background-color: #47c3f0;
+	border:solid 2px #3b97a8;
+	border-radius: 8px;
+	transition-property: all;
+	transition-duration: 300ms;
+}
+.card_btn:hover,.card_btn:active,.card_btn:focus{
+	 box-shadow:0px 0px 2px #bababa, inset 0px 0px 20px #6e5ee5; 
+}
+
+
+/* -Сайдбары- */
+
+/* -Сайдбар_1- */
+.content__sidebars{
+	grid-column: 1;
+	justify-self: left;
+}
+/*Иконка*/
+.genre__icon1{
+	display: block;
+	position: relative;
+	width: 108px;
+	height: 50px;
+}
+.line{
+	position: absolute;
+	width: 5px;
+	height: 50px;
+	background-color: #6e5ee5;
+}
+.burger,.burger::before,.burger::after{
+	position: absolute;
+	top: 50%; margin-top: -1px;
+	left:20%; margin-left: -3px;
+	width: 18px;
+	height: 2px;
+	background-color: #6e5ee5;
+}
+.burger::before,.burger::after{
+	content: '';
+}
+.burger::before{
+	transform: translateY(-7px);
+}
+.burger::after{
+	transform: translateY(7px);
+}
+.genre{
+	position: absolute;
+	left: 40%;
+  	top: 50%; transform: translateY(-50%);
+	font-family:HelveticaNeueLT-Roman;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	color: #6e5ee5;
+}
+
+/*Кнопка*/
+.gbtn{
+	width: 230px;
+	height: 40px;
+	margin-top: 17px;
+	font-family:HelveticaNeueLT-Roman;
+	font-weight: bold;
+	font-size: 17px;
+	letter-spacing: 0.56px;
+	color: #fff;
+	text-align: center;
+	background-color: #292b37;
+	border: none;
+	border-bottom: 3px solid #6e5ee5;
+	transition-property: all;
+	transition-duration: 300ms;
+}
+.gbtn:hover,.gbtn:active,.gbtn:focus{
+	 box-shadow:0px 0px 2px #bababa, inset 0px 0px 20px #6e5ee5; 
+}
+
+/*Категории*/
+.vertical-menu {
+    width: 230px;
+    height: 313px;
+    background-color: #1e212a;
+    overflow-y: auto;
+    scrollbar-color: #6e5ee5 #191a20; 
+    scrollbar-width: thin;
+}
+.vertical-menu label{
+	width: 210px;
+	margin: 0 auto;
+	border-bottom: 1px solid #34373f;
+    font-family:HelveticaNeueLT-Roman;
+	font-weight: bold;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 0.56px;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+.vertical-menu label::before{
+  content: '';
+  display: inline-block;
+  border: 8px solid transparent;
+  border-left: 13px solid #6e5ee5; 
+  margin-right: 5px;
+  width: 0;
+  height: 0;
+  transform: translateY(2px);
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+input[type="checkbox"] + label span{
+    display:inline-block;
+    float: right;
+    width:21px;
+    height:21px;
+    background-image:url(../../img/checkbox_plus.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 21px;
+    cursor:pointer;
+    transform: translateY(2px);
+}
+input[type="checkbox"]:checked + label span{
+    width:21px;
+    height:21px;
+	background-image:url(../../img/checkbox_plus_active.svg);
+	background-position: center center;
+    background-repeat: no-repeat;
+	background-size: 21px;
+}
+
+/* -Сайдбар_2- */
+.rev{
+	margin-top: 50px;
+}
+.editContent{
+	display: inline-block;
+	margin-bottom: .5rem;
+	margin-top: 10px;
+	font-family:HelveticaNeueLT-Roman;
+	font-weight: bold;
+	color: #fff;
+	font-size: 15px;
+}
+.editName{
+	margin-top: 0px;
+}
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+.form-control {
+    display: block;
+    width: 230px;
+    height: 100px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.textCtrl{
+	height: 20px;
+}
+

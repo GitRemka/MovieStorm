@@ -1,0 +1,26 @@
+.content__btns{ 
+	grid-column: 2;
+	grid-row: 1;
+	justify-self: center;
+}
+
+/* -Навигация- */
+.cbtn{
+	width: 190px;
+	height: 50px;
+	font-family:HelveticaNeueLT-Roman;
+	font-size: 20px;
+	color: #fff;
+	float:left;
+	background-color: #0aaee4;
+	border: 2px;
+	border-style: solid;
+	border-color: #0e455c;
+	transition-property: all;
+	transition-duration: 300ms;
+}
+
+.cbtn:hover,.cbtn:active,.cbtn:focus{
+	 box-shadow:0px 0px 2px #bababa, inset 0px 3px 12px #ffffff; 
+}
+

@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	overflow-wrap: break-word; 
+}
+.container{
+	max-width: 100%;
+	min-width: 320px;
+	background: 
+	linear-gradient( 
+      rgba(30, 33, 42, 1),
+      rgba(30, 33, 42, 1)
+    ), 
+		url("../img/pat.png") repeat ;
+		background-size: cover;
+		background-size:300px; 
+		background-blend-mode:hard-light; 
+	
+}
+.wrap{
+	max-width: 100%; /* 1700px*/ 
+	min-width: 290px;
+	padding: 0 50px;
+	margin: 0 auto;
+}
+
+
